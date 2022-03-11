@@ -1,5 +1,70 @@
 def maginner(str):
-    print(str)
+    str = str.lower()
+    msg = []
+    for letter in str:
+        if letter == 'a':
+            msg.append(A())
+        elif letter == 'b':
+            msg.append(B())
+        elif letter == 'c':
+            msg.append(C())
+        elif letter == 'd':
+            msg.append(D())
+        elif letter == 'e': 
+            msg.append(E())
+        elif letter == 'f':
+            msg.append(F())
+        elif letter == 'g':
+            msg.append(G())
+        elif letter == 'h':
+            msg.append(H())
+        elif letter == 'i':
+            msg.append(I())
+        elif letter == 'j':
+            msg.append(J())
+        elif letter == 'k':
+            msg.append(K())
+        elif letter == 'l':
+            msg.append(L())
+        elif letter == 'm':
+            msg.append(M())
+        elif letter == 'n':
+            msg.append(N())
+        elif letter == 'o':
+            msg.append(O())
+        elif letter == 'p':
+            msg.append(P())
+        elif letter == 'q':
+            msg.append(Q())
+        elif letter == 'r':
+            msg.append(R())
+        elif letter == 's':
+            msg.append(S())
+        elif letter == 't':
+            msg.append(T())
+        elif letter == 'u':
+            msg.append(U())
+        elif letter == 'v':
+            msg.append(V())
+        elif letter == 'w':
+            msg.append(W())
+        elif letter == 'x':
+            msg.append(X())
+        elif letter == 'y':
+            msg.append(Y())
+        elif letter == 'z':
+            msg.append(Z())
+        elif letter == " ":
+            msg.append(blank_space())
+        elif letter == ".":
+            msg.append(dot())
+        else:
+            print("ERR: Character not supported")
+            return 0
+
+    concat(msg)
+    
+    return 1
 
 def concat(c):
     line1 = ""
@@ -135,12 +200,12 @@ def J():
 
 def K():
     K = []
-    K.append(" _   __ ")
-    K.append("| | / / ")
-    K.append("| |/ /  ")
-    K.append("|   /   ")
-    K.append("| |\\ \\  ")
-    K.append("|_| \\_\\ ")
+    K.append(" _   __")
+    K.append("| | / /")
+    K.append("| |/ / ")
+    K.append("|   /  ")
+    K.append("| |\\ \\ ")
+    K.append("|_| \\_\\")
 
     return K
 
@@ -179,12 +244,12 @@ def N():
 
 def O():
     O = []
-    O.append(" ______ ")
-    O.append("|      |")
-    O.append("|      |")
-    O.append("|   ▄  |")
-    O.append("|      |")
-    O.append("|______|")
+    O.append(" _______ ")
+    O.append("|       |")
+    O.append("|       |")
+    O.append("|   ▄   |")
+    O.append("|       |")
+    O.append("|_______|")
 
     return O
 
@@ -226,50 +291,108 @@ def S():
     S.append(" ______ ")
     S.append("|   ___|")
     S.append("|  |___ ")
-    S.append("|      |")
-    S.append("| |\\ \\  ")
-    S.append("|_| \\_\\ ")
+    S.append("|___   |")
+    S.append(" ___|  |")
+    S.append("|______|")
 
     return S
-a = A()
-b = B()
-c = C()
-d = D()
-e = E()
-f = F()
-g = G()
-h = H()
-i = I()
-j = J()
-k = K()
-l = L()
-m = M()
-n = N()
-o = O()
-p = P()
-q = Q()
-r = R()
 
-msg = []
-msg.append(a)
-msg.append(b)
-msg.append(c)
-msg.append(d)
-msg.append(e)
-msg.append(f)
-msg.append(g)
-msg.append(h)
-msg.append(i)
-msg.append(j)
-msg.append(k)
-msg.append(l)
-msg.append(m)
-msg.append(n)
-msg.append(o)
-msg.append(p)
-msg.append(q)
-msg.append(r)
-msg.append(a)
-#print(len(c))
-#print(c)
-concat(msg)
+def T():
+    T = []
+    T.append(" ______ ")
+    T.append("|__  __|")
+    T.append("  |  |  ")
+    T.append("  |  |  ")
+    T.append("  |  |  ")
+    T.append("  |__|  ")
+
+    return T
+
+def U():
+    U = []
+    U.append(" __   __ ")
+    U.append("|  | |  |")
+    U.append("|  | |  |")
+    U.append("|  | |  |")
+    U.append("|  |_|  |")
+    U.append("|_______|")
+
+    return U
+
+def V():
+    V = []
+    V.append("        ")
+    V.append("|\\    /|")
+    V.append("| \\  / |")
+    V.append("|  \\/  |")
+    V.append(" \\    / ")
+    V.append("  \\__/  ")
+
+    return V
+
+def W():
+    W = []
+    W.append("        ")
+    W.append("|\\    /|")
+    W.append("| \\/\\/ |")
+    W.append("|      |")
+    W.append("|      |")
+    W.append(" \\_/\\_/ ")
+
+    return W
+
+def X():
+    X = []
+    X.append(" _    _ ")
+    X.append("\\ \\  / /")
+    X.append(" \\ \\/ / ")
+    X.append("  /  \\  ")
+    X.append(" / /\\ \\ ")
+    X.append("/_/  \\_\\")
+
+    return X
+
+def Y():
+    Y = []
+    Y.append(" _    _ ")
+    Y.append("\\ \\  / /")
+    Y.append(" \\ \\/ / ")
+    Y.append("  \\  /  ")
+    Y.append("  / /   ")
+    Y.append(" /_/    ")
+
+    return Y
+
+def Z():
+    Z = []
+    Z.append(" ______ ")
+    Z.append("|__    /")
+    Z.append("   /  / ")
+    Z.append("  /  /  ")
+    Z.append(" /  /__ ")
+    Z.append("|______|")
+
+    return Z
+
+def blank_space():
+    BlankSpace = []
+    BlankSpace.append("  ")
+    BlankSpace.append("  ")
+    BlankSpace.append("  ")
+    BlankSpace.append("  ")
+    BlankSpace.append("  ")
+    BlankSpace.append("  ")
+
+    return BlankSpace
+
+def dot():
+    Dot = []
+    Dot.append(" ")
+    Dot.append(" ")
+    Dot.append(" ")
+    Dot.append(" ")
+    Dot.append(" ")
+    Dot.append("▄")
+
+    return Dot
+
