@@ -1,0 +1,1 @@
+from .maginner import maginner

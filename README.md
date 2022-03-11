@@ -5,12 +5,14 @@ Easily create a banner to level up your program
 ---
 ## Use
 ---
-This program is intended to help developers of command line utilities to beautify their tool by adding a Banner.
+This program is intended to help developers of command line utilities to beautify their tool by adding a simple quick Banner.
 
-> import maginner as mg
->> mg.maginner("TOOL_NAME")
+> On terminal: pip install maginner.
 
----
+> import maginner as mg.
+
+> mg.maginner("TOOL_NAME").
+
 ---
 ### Considerations 
 ---
