@@ -1,6 +1,7 @@
 def maginner(str):
     str = str.lower()
     msg = []
+
     for letter in str:
         if letter == 'a':
             msg.append(A())
